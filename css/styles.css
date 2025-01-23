@@ -3,6 +3,10 @@ body {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+    height: 100%;
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 #header {
     justify-content: center;
@@ -12,8 +16,16 @@ body {
 }
 #container{
     background-color: rgba(182, 226, 255, 0.428);
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
     margin: auto;
 }
+
+#content{
+    padding: 10px;
+}
+
 #headtext{
     color: #134463ef;
     font-size: 35px;
@@ -57,4 +69,29 @@ body {
 
 .navlink:hover {
     background-color: rgba(142, 204, 246, 0.519);;
+}
+
+#footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(100, 182, 237, 0.519);
+}
+
+#goodexample {
+    text-align: center;
+}
+
+#badexample {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #nav {
+        flex-direction: column; /* Stacks navigation links on smaller screens */
+        align-items: center;
+    }
+    .navlink {
+        width: 80%; /* Makes buttons smaller and centered */
+    }
 }

@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-TODO: Showcase page for the 
+TODO: Team showcase page 
 -->
 <html>
 
@@ -31,11 +31,11 @@ TODO: Showcase page for the
         <div id="content">
 
             <h2>Lab 3.2 Critique</h2>
-            <h3>Example of a bad website <a href="https://arngren.net/"> Bad Website</a></h3>
+            <h3>Example of a bad website: <a href="https://arngren.net/" target="_blank"> Bad Website</a></h3>
             <p> 
                 Consitency: 
                 The website completely lacks consistency. Firstly, there's no consistent 
-                colour scheme and no clear navigation section. There isnt even a distinct head it appears as 
+                colour scheme and no clear navigation section. There isn't even a distinct header and it appears as 
                 just a splash of images and text which aren't alligned nicely. The text is often overlapping and has
                 many random font colours, overall the website just looks overwhelming. 
             </p>
@@ -56,14 +56,18 @@ TODO: Showcase page for the
 
             <p>
                 Error Prevention: 
-                The website has not been debugged of any possible errors as in the developer tools it shwos that
-                there are several erros including some "failed to load resource" errors. 
+                The website has not been debugged of any possible errors as in the developer tools it shows that
+                there are several errors including some "failed to load resource" errors. 
             </p>
 
-            <img src="images/badpic.jpg" width="300px">
-            <img src="images/goodpic.png" width="500px">
+            <div id="badexample">
+                <figure>
+                    <img src="images/badpic.jpg" width="300px" alt="Screenshot of a bad website">
+                    <figcaption><em>This website shows poor design practices: inconsistent layout, overlapping text, and usability issues.</em></figcaption>
+                </figure>
+            </div>
 
-            <h3>Example of a good website <a href="https://www.mcmaster.com/"> Good Website</a></h3>
+            <h3>Example of a good website: <a href="https://www.mcmaster.com/" target="_blank"> Good Website</a></h3>
 
             <p>
                 Consistency: 
@@ -88,9 +92,16 @@ TODO: Showcase page for the
 
             <p>
                 Error Prevention:
-                There is minimal errors present when checking the developer tools. None of the erros significantly affect
+                There is minimal errors present when checking the developer tools. None of the errors significantly affect
                 the appearance or performance of the website.
             </p>
+
+            <div id="goodexample">
+                <figure>
+                    <img src="images/goodpic.png" width="500px" alt="Screenshot of a good website">
+                    <figcaption><em>A well-designed website with consistent layout, good navigation, and responsive design.</em></figcaption>
+                </figure>
+            </div>
 
         </div>
 
