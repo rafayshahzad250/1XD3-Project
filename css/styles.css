@@ -4,41 +4,45 @@ body {
     font-weight: normal;
     font-style: normal;
     height: 100%;
-    margin: 0; 
-    padding: 0; 
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevents horizontal scrolling */
 }
+
 #header {
     justify-content: center;
     background-color: rgba(100, 182, 237, 0.519);
     padding: 40px;
-    display:flex;
+    display: flex;
 }
-#container{
+
+#container {
     background-color: rgba(182, 226, 255, 0.428);
     display: flex;
-    flex-direction: column; 
-    min-height: 100vh; 
+    flex-direction: column;
+    min-height: 100vh;
     margin: auto;
 }
 
-#content{
+#content {
     padding: 10px;
 }
 
-#headtext{
+#headtext {
     color: #134463ef;
     font-size: 35px;
     width: 65%;
     margin: auto;
 }
 
-#nav{
+#nav {
     display: flex;
     text-align: center;
     justify-content: space-around;
 }
-.navlink{
+
+.navlink {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 0px;
@@ -51,7 +55,7 @@ body {
     margin: 20px;
     text-align: center;
     text-decoration: none;
-    color: #134463ef; 
+    color: #134463ef;
     /* box-sizing: border-box;
     border-radius: 5px;
     padding-top: 10px;
@@ -68,7 +72,8 @@ body {
 }
 
 .navlink:hover {
-    background-color: rgba(142, 204, 246, 0.519);;
+    background-color: rgba(142, 204, 246, 0.519);
+    ;
 }
 
 #footer {
@@ -86,12 +91,22 @@ body {
     text-align: center;
 }
 
+#report {
+    font-size: 18px;
+    margin: 20px;
+    padding: 30px;
+    background-color: white;
+}
+
 @media (max-width: 768px) {
     #nav {
-        flex-direction: column; /* Stacks navigation links on smaller screens */
+        flex-direction: column;
+        /* Stacks navigation links on smaller screens */
         align-items: center;
     }
+
     .navlink {
-        width: 80%; /* Makes buttons smaller and centered */
+        width: 80%;
+        /* Makes buttons smaller and centered */
     }
 }
