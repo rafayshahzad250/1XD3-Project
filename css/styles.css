@@ -6,8 +6,8 @@ body {
     font-weight: normal;
     font-style: normal;
     height: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     overflow-x: hidden;
     /* Stop horizontal scrolling */
     font-size: 16px;
@@ -157,6 +157,12 @@ body {
     transform: translateY(-2px);
     /* for visual feedback when hovering*/
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#report {
+    background-color: white;
+    margin: 30px;
+    padding: 50px;
 }
 
 #footer {
