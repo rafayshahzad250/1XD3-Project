@@ -24,9 +24,10 @@ TODO: Website critique page
             </div>
         </div>
         <div id="nav">
-            <a class="navlink" href="index.html"> Home</a>
-            <a class="navlink" href="about.html"> About us</a>
-            <a class="navlink" href="project.html"> Project</a>
+            <a class="navlink" href="index.html">Homepage</a>
+            <a class="navlink" href="about.html">About us</a>
+            <a class="navlink" href="showcase.html"> Showcase</a>
+            <a class="navlink" href="project.html"> Projects</a>
         </div>
         <div id="content">
 
@@ -62,7 +63,7 @@ TODO: Website critique page
 
             <div id="badexample">
                 <figure>
-                    <img src="images/badpic.jpg" width="300px" alt="Screenshot of a bad website">
+                    <img class="goodbadimg" src="images/badpic.jpg" width="300px" alt="Screenshot of a bad website">
                     <figcaption><em>This website shows poor design practices: inconsistent layout, overlapping text, and usability issues.</em></figcaption>
                 </figure>
             </div>
@@ -98,7 +99,7 @@ TODO: Website critique page
 
             <div id="goodexample">
                 <figure>
-                    <img src="images/goodpic.png" width="500px" alt="Screenshot of a good website">
+                    <img class="goodbadimg" src="images/goodpic.png" width="500px" alt="Screenshot of a good website">
                     <figcaption><em>A well-designed website with consistent layout, good navigation, and responsive design.</em></figcaption>
                 </figure>
             </div>
@@ -108,6 +109,21 @@ TODO: Website critique page
         <div id="footer"> 
             &copy; HTML Heroes, McMaster University, 2025
         </div>
+
+        <script>
+            img = document.getElementsByClassName("goodimg");
+          
+            function enlargeImg() {
+                img.style.transform = "scale(1.5)";
+                img.style.transition = "transform 0.25s ease";
+            }
+          
+            // Function to reset image size
+            function resetImg() {
+                img.style.transform = "scale(1)";
+                img.style.transition = "transform 0.25s ease";
+            }
+        </script>
 </body>
 
 </html>
